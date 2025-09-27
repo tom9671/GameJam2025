@@ -27,8 +27,9 @@ public class GameManager : MonoBehaviour
     Vector3 mousePos;
 
     DropdownList<int> events;
-    [Dropdown("events")] public int rescueTime;
-    [Dropdown("events")] public int creatureTime;
+    [Dropdown("events")] public int rescueTime = 0;
+    [Dropdown("events")] public int creatureTime = 1;
+    [Dropdown("events")] public int flashlightUses = 2;
     public float panSpeed = 10;
     public Vector2 panClamp;
 

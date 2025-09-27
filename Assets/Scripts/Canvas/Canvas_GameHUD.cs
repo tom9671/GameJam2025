@@ -7,6 +7,7 @@ public class Canvas_GameHUD : MonoBehaviour
 {
     GameManager gm;
 
+    public int flashlightEffectiveness = 30;
     public float intervalMultiplier = 1;
     public TMP_Text rescueTimer;
     public TMP_Text debugDisplay;
@@ -72,7 +73,7 @@ public class Canvas_GameHUD : MonoBehaviour
             gm.KilledEnding();
     }
 
-    public string GetTimeFromSeconds(int _seconds)
+    string GetTimeFromSeconds(int _seconds)
     {
         int seconds = _seconds % 60;
         int minutes = (_seconds - seconds) / 60;
@@ -81,5 +82,16 @@ public class Canvas_GameHUD : MonoBehaviour
             return minutes + ":" + seconds;
         else
             return minutes + ":0" + seconds;
+    }
+
+    public void UseFlashlight()
+    {
+        int flashlightsLeft = (int)gm.em.ParameterValue(gm.flashlightUses);
+        if(flashlightsLeft > 0)
+        {
+            flashlightsLeft--;
+            gm.em.SetParameter(gm.flashlightUses, flashlightsLeft);
+            gm.em.SetParameter(gm.creatureTime, gm.em.ParameterValue(gm.creatureTime) + flashlightEffectiveness);
+        }
     }
 }
