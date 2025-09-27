@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public StartGameParameters startGameParameters;
 
     Camera cam;
+    EventManager _em; public EventManager em { get { return _em; } }
 
     GameObject pauseCanvas;
 
@@ -33,12 +34,15 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        cam = FindFirstObjectByType<Camera>();
+        _em = GetComponent<EventManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cam = FindFirstObjectByType<Camera>();
+        
     }
 
     // Update is called once per frame

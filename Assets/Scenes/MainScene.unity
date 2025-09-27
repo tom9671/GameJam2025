@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -346,6 +347,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144ede4d6d64feb4d9680895754919b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - eventParameter: 0
+    pOperator: 0
+    value: 1
+    onConditionMet:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 619394800}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +515,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8119176086150552253, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: rooms.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119176086150552253, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: 'rooms.Array.data[0]'
       value: 
       objectReference: {fileID: 418670555}
@@ -497,8 +533,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4148035003532579638, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 891250040500834370}
   m_SourcePrefab: {fileID: 100100000, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+--- !u!1 &891250040500834369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4148035003532579638, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+  m_PrefabInstance: {fileID: 891250040500834368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &891250040500834370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891250040500834369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44cb94b1006b11408be4f81c36e6d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventParameters:
+  - name: Paramter1
+    index: 0
+    currentValue: 0
+  listOfEvents: 0
 --- !u!1001 &6794549836844091875
 PrefabInstance:
   m_ObjectHideFlags: 0
