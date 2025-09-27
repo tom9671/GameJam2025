@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 
+public enum eEnding { rescued, selfDestruct, killed}
+
 [System.Serializable]
 public class StartGameParameters
 {
@@ -22,21 +24,26 @@ public class DialogueParams
 public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
-    public Vector3 mousePos;
+    Vector3 mousePos;
 
+    public int timeLimit = 600;
     public float panSpeed = 10;
     public Vector2 panClamp;
 
     public StartGameParameters startGameParameters;
     public DialogueParams[] dialogueParameters;
+    [NamedArray(typeof(eEnding))] public Canvas_EndScreen[] endings = new Canvas_EndScreen[3];
 
     Camera cam;
+    Canvas_GameHUD hud;
     EventManager _em; public EventManager em { get { return _em; } }
 
     GameObject pauseCanvas;
 
     DropdownList<int> _dialogue; public DropdownList<int> dialogue { get { return _dialogue; } }
     [Dropdown("_dialogue")] public int dialogues;
+
+    bool gameOver;
 
     void Awake()
     {
@@ -50,13 +57,14 @@ public class GameManager : MonoBehaviour
         }
 
         cam = FindFirstObjectByType<Camera>();
+        hud = FindFirstObjectByType<Canvas_GameHUD>();
         _em = GetComponent<EventManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        StartCoroutine("GameStartSequence");
     }
 
     void OnValidate()
@@ -132,6 +140,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameStartSequence()
     {
+        hud.StartTimer(timeLimit);
+
         yield return new WaitForSeconds(startGameParameters.startDelay);
 
         if(startGameParameters.dialogueOnStart != null)
@@ -146,6 +156,9 @@ public class GameManager : MonoBehaviour
 
     void Pause()
     {
+        if (gameOver)
+            return;
+
         if(pauseCanvas == null)
         {
             pauseCanvas = Instantiate(Resources.Load("Canvas/" + "Canvas_Pause") as GameObject);
@@ -153,6 +166,21 @@ public class GameManager : MonoBehaviour
         else
         {
             pauseCanvas.SetActive(!pauseCanvas.active);
+        }
+    }
+
+    public void RescuedEnding()
+    {
+        EndGame();
+        Canvas_EndScreen endScreen = Instantiate(endings[(int)eEnding.rescued]);
+    }
+
+    public void EndGame()
+    {
+        gameOver = true;
+        if (pauseCanvas != null && pauseCanvas.active)
+        {
+            pauseCanvas.SetActive(false);
         }
     }
 }

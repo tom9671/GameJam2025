@@ -15,6 +15,11 @@ public class SceneManagement : MonoBehaviour
         
     }
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void LoadScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
