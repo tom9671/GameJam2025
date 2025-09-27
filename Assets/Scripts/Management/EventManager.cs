@@ -97,4 +97,13 @@ public class EventManager : MonoBehaviour
 
         return 0;
     }
+
+    public void SetParameter(int _index, float _value)
+    {
+        foreach (EventParameter ep in eventParameters)
+        {
+            if (_index == ep.index)
+                ep.currentValue = _value;
+        }
+    }
 }

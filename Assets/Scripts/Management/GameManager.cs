@@ -26,7 +26,9 @@ public class GameManager : MonoBehaviour
     public static GameManager gm;
     Vector3 mousePos;
 
-    public int timeLimit = 600;
+    DropdownList<int> events;
+    [Dropdown("events")] public int rescueTime;
+    [Dropdown("events")] public int creatureTime;
     public float panSpeed = 10;
     public Vector2 panClamp;
 
@@ -43,7 +45,7 @@ public class GameManager : MonoBehaviour
     DropdownList<int> _dialogue; public DropdownList<int> dialogue { get { return _dialogue; } }
     [Dropdown("_dialogue")] public int dialogues;
 
-    bool gameOver;
+    bool _gameOver; public bool gameOver { get { return _gameOver; } }
 
     void Awake()
     {
@@ -78,6 +80,11 @@ public class GameManager : MonoBehaviour
             {
                 _dialogue.Add(dialogueParameters[i].name, dialogueParameters[i].index);
             }
+        }
+
+        if (_em != null)
+        {
+            events = _em.events;
         }
     }
 
@@ -123,11 +130,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         mousePos = Input.mousePosition;
-        if (mousePos.x <= 10 && cam.transform.position.x > panClamp.x)
+        if (mousePos.x <= 30 && cam.transform.position.x > panClamp.x)
         {
             cam.transform.position += -Vector3.right * panSpeed * Time.deltaTime;
         }
-        else if(mousePos.x >= (Screen.width - 10) && cam.transform.position.x < panClamp.y)
+        else if(mousePos.x >= (Screen.width - 30) && cam.transform.position.x < panClamp.y)
         {
             cam.transform.position += Vector3.right * panSpeed * Time.deltaTime;
         }
@@ -140,7 +147,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GameStartSequence()
     {
-        hud.StartTimer(timeLimit);
+        hud.StartTimer();
 
         yield return new WaitForSeconds(startGameParameters.startDelay);
 
@@ -156,7 +163,7 @@ public class GameManager : MonoBehaviour
 
     void Pause()
     {
-        if (gameOver)
+        if (_gameOver)
             return;
 
         if(pauseCanvas == null)
@@ -175,9 +182,22 @@ public class GameManager : MonoBehaviour
         Canvas_EndScreen endScreen = Instantiate(endings[(int)eEnding.rescued]);
     }
 
+    public void SelfDestructEnding()
+    {
+        EndGame();
+        Canvas_EndScreen endScreen = Instantiate(endings[(int)eEnding.selfDestruct]);
+    }
+
+    public void KilledEnding()
+    {
+        EndGame();
+        Canvas_EndScreen endScreen = Instantiate(endings[(int)eEnding.killed]);
+    }
+
     public void EndGame()
     {
-        gameOver = true;
+        _gameOver = true;
+        hud.bottomPanel.SetActive(false);
         if (pauseCanvas != null && pauseCanvas.active)
         {
             pauseCanvas.SetActive(false);

@@ -9,10 +9,30 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public float intervalMultiplier = 1;
     public TMP_Text rescueTimer;
+    public TMP_Text debugDisplay;
+    public GameObject bottomPanel;
+
+    int rescueTime;
+    int creatureTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gm = GameManager.gm;
+    }
+
+    void FixedUpdate()
+    {
+        debugDisplay.text = "Rescue Time: " + rescueTime + "\n" +
+            "Creature Time: " + creatureTime + "\n";
+
+        if (!gm.gameOver)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            if (mousePos.y <= 30)
+                bottomPanel.SetActive(true);
+            else if (mousePos.y > 100)
+                bottomPanel.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -21,24 +41,35 @@ public class Canvas_GameHUD : MonoBehaviour
         
     }
 
-    public void StartTimer(int _time)
+    public void StartTimer()
     {
-        StartCoroutine("CountDown", _time);
+        StartCoroutine("CountDown");
     }
 
-    IEnumerator CountDown(int _time)
+    IEnumerator CountDown()
     {
-        int timeLeft = _time;
+        gm = GameManager.gm;
 
-        while(timeLeft > 0)
+        rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
+        creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
+
+        while(rescueTime > 0 && creatureTime > 0)
         {
-            rescueTimer.text = GetTimeFromSeconds(timeLeft);
+            rescueTimer.text = GetTimeFromSeconds(rescueTime);
             yield return new WaitForSeconds(1 * (1f / intervalMultiplier));
-            timeLeft--;
+            rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
+            creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
+            rescueTime -= 1;
+            creatureTime -= 1;
+            gm.em.SetParameter(gm.rescueTime, rescueTime);
+            gm.em.SetParameter(gm.creatureTime, creatureTime);
         }
 
         rescueTimer.text = "0:00";
-        gm.RescuedEnding();
+        if(rescueTime <= 0)
+            gm.RescuedEnding();
+        else
+            gm.KilledEnding();
     }
 
     public string GetTimeFromSeconds(int _seconds)

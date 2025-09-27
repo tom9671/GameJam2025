@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4290619225649907858}
   - component: {fileID: 4954705319130101297}
   - component: {fileID: 8119176086150552253}
+  - component: {fileID: 1394721923748893551}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,12 +46,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd350799e11434e419c8b200a694e5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePos: {x: 0, y: 0, z: 0}
+  rescueTime: 0
+  creatureTime: 1
   panSpeed: 10
   panClamp: {x: -1, y: 1}
   startGameParameters:
     startDelay: 0
     dialogueOnStart: []
+  dialogueParameters: []
+  endings:
+  - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}
+  - {fileID: 1689743303923839224, guid: a93edb72f0a9d8241a638af25fb4809b, type: 3}
+  - {fileID: 6391936399693850392, guid: df1085b58a2c8684dab30f1c039f5fc9, type: 3}
+  dialogues: 0
 --- !u!114 &8119176086150552253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,3 +75,25 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &1394721923748893551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148035003532579638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44cb94b1006b11408be4f81c36e6d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventParameters:
+  - name: RescueTime
+    currentValue: 600
+    index: 0
+  - name: CreatureTime
+    currentValue: 300
+    index: 1
+  - name: FlashlightUses
+    currentValue: 5
+    index: 2

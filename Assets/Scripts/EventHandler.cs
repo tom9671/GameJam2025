@@ -42,9 +42,6 @@ public class EventHandler : MonoBehaviour
         if(em == null)
             em = FindFirstObjectByType<GameManager>().GetComponent<EventManager>();
 
-        if (em == null)
-            Debug.Log("Not found");
-
         if (events != null)
         {
             foreach (Event ev in events)
