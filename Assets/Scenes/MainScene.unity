@@ -387,6 +387,314 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: endings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: 'endings.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6391936399693850392, guid: df1085b58a2c8684dab30f1c039f5fc9, type: 3}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.size
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: dialogueParameters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[0].dialogue
+      value: I have been researching the marine life of the Abyssopelagic Zone for
+        nearly thirteen years.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[1].dialogue
+      value: I have contributed a lot to my field, and my expeditions are directly
+        responsible for the discovery of oceanic life previously unknown to mankind.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[2].dialogue
+      value: Knowing all this makes the current status of this expedition all the
+        more humiliating.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[3].dialogue
+      value: "Because of prior \u2026 incidents the university was unwilling to fund
+        another expedition to the Cator Ocean. However, proper analysis of the sea
+        life here proves essential to my research."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[4].dialogue
+      value: "I was only able to gather enough money to procure this rather \u2026
+        unremarkable submarine. Captain James is competent enough, but I\u2019m not
+        used to working without a research team."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[5].dialogue
+      value: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
+        not as much sea life as I anticipated. We\u2019ve been down here for about
+        four days and I have only managed to gather three samples. I spent weeks
+        studying maps and migration patterns and am positive that this is the best
+        location to collect data."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[6].dialogue
+      value: Something must be scaring the animals away.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[7].dialogue
+      value: It must be that horrible engine. It seems to grow louder and more irritating
+        everyday. I wonder if the Captain can do anything about it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[8].dialogue
+      value: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
+        ought to come out of that lab every once in a while. Have you found any more
+        samples?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[9].dialogue
+      value: "Actually, that is what I was hoping to discuss with you. I wonder if
+        my difficulty finding suitable samples is due to how loud our engine is.
+        I was thinking you could go down to the engine room and see if there\u2019s
+        anything you could do."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[10].dialogue
+      value: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
+        been captain of this very boat for almost 34 years now. Angie may be a bit
+        noisy, but she\u2019s reliable where it counts."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[11].dialogue
+      value: "Age aside,  the marine life I\u2019m supposed to analyze here are of
+        the utmost importance and \u2026 Angie\u2019s \u2026  engine is scaring my
+        samples away and I would really appreciate it if you could go down there
+        and see if there\u2019s anything you could do to make the engine quieter."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[12].dialogue
+      value: "Well, no promises, but I\u2019ll go down and see if there's anything
+        I can do. Wait here. Make sure we don\u2019t steer right into a shark"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[13].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[14].dialogue
+      value: "Sharks don\u2019t even come to this level of the ocean. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[15].dialogue
+      value: I wish he would hur-
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[16].dialogue
+      value: I wish he would hur-
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[17].dialogue
+      value: 'What the hell was that  Captain? Captain James, are you there? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[18].dialogue
+      value: "\u2026 Captain? I\u2019m coming down there  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[19].dialogue
+      value: 'Oh my god.  What What happ- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[20].dialogue
+      value: What on earth is-
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[21].dialogue
+      value: 'Some  Some thing is down there.  And the captain '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[22].dialogue
+      value: 'Oh God.  I need to call for help  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[23].dialogue
+      value: God, what do these buttons even do?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[24].dialogue
+      value: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
+        has been compromised. The captain he\u2019s \u2026 he\u2019s. I need to get
+        to the surface. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[25].dialogue
+      value: Hello?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[26].dialogue
+      value: "Hello, We\u2019ve received your distress signal. Once we find your
+        ship we should be able to get you up to the surface in about X minutes. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[27].dialogue
+      value: Oh thank God. I think our coordinates are at-
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[28].dialogue
+      value: "Oh I know there\u2019s a flashlight around here somewhere"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[29].dialogue
+      value: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
+        get maybe X uses out of it if I\u2019m lucky. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[30].dialogue
+      value: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
+        I can do to get to the surface faster. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[0].displayImage
+      value: 
+      objectReference: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[1].displayImage
+      value: 
+      objectReference: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[2].displayImage
+      value: 
+      objectReference: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[0].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[1].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[2].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[3].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[4].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[5].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[6].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[7].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[8].characterName
+      value: Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[9].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[10].characterName
+      value: Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[11].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[12].characterName
+      value: Captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[13].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[14].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[15].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[16].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[17].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[18].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[19].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[20].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[21].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[22].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[23].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[24].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[25].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[26].characterName
+      value: Help
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[27].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[28].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[29].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[30].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: dialogueParameters.Array.data[0].dialogue.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8119176086150552253, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: 'rooms.Array.data[0]'
       value: 

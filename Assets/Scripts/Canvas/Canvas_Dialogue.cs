@@ -3,15 +3,25 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 
+[System.Serializable]
+public class DialogueSequence 
+{
+    public string dialogue;
+    public string characterName;
+    public Sprite displayImage;
+}
+
 public class Canvas_Dialogue : MonoBehaviour
 {
     Color invisColor = new Vector4(0, 0, 0, 0);
 
     GameManager gm;
+    Animator anim;
 
-    public string[] dialogue;
-    AudioClip[] clips;
+    DialogueSequence[] dialogue;
     public TMP_Text displayText;
+    public TMP_Text characterNameText;
+    public Image[] transitionImages = new Image[2];
     public float textInterval = 0.1f;
     float intervalMult;
     bool writing;
@@ -22,19 +32,21 @@ public class Canvas_Dialogue : MonoBehaviour
     void Start()
     {
         gm = GameManager.gm;
+        anim = GetComponent<Animator>();
         if (!writing)
         {
             Init(dialogue);
         }
     }
 
-    public void Init(string[] _dialogue)
+    public void Init(DialogueSequence[] _dialogue)
     {
         gm = GameManager.gm;
+        anim = GetComponent<Animator>();
 
         dialogue = _dialogue;
 
-        if (dialogue.Length < 1 || dialogue[0] == "")
+        if (dialogue.Length < 1 || dialogue[0].dialogue == "")
             Destroy(gameObject);
         else
         {
@@ -45,6 +57,7 @@ public class Canvas_Dialogue : MonoBehaviour
                     previousDialoque[i].StopWriting();
             }
 
+            anim.SetTrigger("Start");
             StartWriting();
         }
     }
@@ -71,21 +84,30 @@ public class Canvas_Dialogue : MonoBehaviour
     void StartWriting()
     {
         displayText.text = "";
+        characterNameText.text = dialogue[messageIndex].characterName;
         writing = true;
         characterIndex = 0;
         StartCoroutine(WriteText());
+
+        transitionImages[1].sprite = transitionImages[0].sprite;
+        transitionImages[0].sprite = dialogue[messageIndex].displayImage;
+        if (transitionImages[0].sprite != null)
+            anim.SetTrigger("Enter");
+        else if (transitionImages[1].sprite != null)
+            anim.SetTrigger("Exit");
     }
 
     IEnumerator WriteText()
     {
         //displayText.text += dialogue[messageIndex].Substring(characterIndex, 1); 
-        displayText.text = "<color=white>" + dialogue[messageIndex].Substring(0, characterIndex) + "</color>";
-        displayText.text += "<color=#ffffff00>" + dialogue[messageIndex].Substring(Mathf.Clamp(characterIndex, 0, dialogue[messageIndex].Length), dialogue[messageIndex].Length - characterIndex) + "</color>";
+        displayText.text = "<color=white>" + dialogue[messageIndex].dialogue.Substring(0, characterIndex) + "</color>";
+        displayText.text += "<color=#ffffff00>" + dialogue[messageIndex].dialogue.Substring(Mathf.Clamp(characterIndex, 0, 
+            dialogue[messageIndex].dialogue.Length), dialogue[messageIndex].dialogue.Length - characterIndex) + "</color>";
 
         yield return new WaitForSeconds(textInterval * intervalMult);
 
         characterIndex++;
-        if (messageIndex < dialogue.Length && characterIndex == dialogue[messageIndex].Length)
+        if (messageIndex < dialogue.Length && characterIndex == dialogue[messageIndex].dialogue.Length)
         {
             int curIdx = messageIndex;
 
@@ -100,7 +122,7 @@ public class Canvas_Dialogue : MonoBehaviour
     void SkipToEnd()
     {
         writing = false;
-        displayText.text = dialogue[messageIndex];
+        displayText.text = dialogue[messageIndex].dialogue;
     }
 
     void AdvanceText()
@@ -110,16 +132,14 @@ public class Canvas_Dialogue : MonoBehaviour
             StopWriting();
         else
         {
-            displayText.text = "";
-            writing = true;
-            characterIndex = 0;
-            StartCoroutine(WriteText());
+            StartWriting();
         }
     }
 
     public void StopWriting()
     {
         writing = false;
+        anim.SetTrigger("End");
         Destroy(gameObject, 5);
         Destroy(this);
     }

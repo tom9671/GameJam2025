@@ -6,13 +6,6 @@ using NaughtyAttributes;
 public enum eEnding { rescued, selfDestruct, killed}
 
 [System.Serializable]
-public class StartGameParameters
-{
-    public float startDelay;
-    public string[] dialogueOnStart;
-}
-
-[System.Serializable]
 public class DialogueParams 
 {
     public string name;
@@ -33,7 +26,7 @@ public class GameManager : MonoBehaviour
     public float panSpeed = 10;
     public Vector2 panClamp;
 
-    public StartGameParameters startGameParameters;
+    public DialogueSequence[] startGameSequence;
     public DialogueParams[] dialogueParameters;
     [NamedArray(typeof(eEnding))] public Canvas_EndScreen[] endings = new Canvas_EndScreen[3];
 
@@ -67,7 +60,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine("GameStartSequence");
+        StartIntro();
     }
 
     void OnValidate()
@@ -147,17 +140,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator GameStartSequence()
+    void StartIntro()
     {
-        hud.StartTimer();
-
-        yield return new WaitForSeconds(startGameParameters.startDelay);
-
-        if(startGameParameters.dialogueOnStart != null)
-            DisplayDialogue(startGameParameters.dialogueOnStart);
+        if (startGameSequence != null && startGameSequence.Length > 0)
+            DisplayDialogue(startGameSequence);
     }
 
-    public void DisplayDialogue(string[] dialogue)
+    public void StartGame()
+    {
+        hud.StartTimer();
+    }
+
+    public void DisplayDialogue(DialogueSequence[] dialogue)
     {
         Canvas_Dialogue newDialogue = Instantiate(Resources.Load("Canvas/" + "Canvas_Dialogue") as GameObject).GetComponent<Canvas_Dialogue>();
         newDialogue.Init(dialogue);
