@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[0]'
       value: The creature got in and killed you
       objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].dialogue
+      value: The creature found and killed you
+      objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -98,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590127031791960285, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Name
-      value: Canvas_EndScreen Variant(Killed)
+      value: Canvas_EndScreen(Killed)
       objectReference: {fileID: 0}
     - target: {fileID: 7959875379785200632, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_text

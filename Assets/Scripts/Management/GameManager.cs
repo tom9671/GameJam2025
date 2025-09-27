@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
     void StartIntro()
     {
         if (startGameSequence != null && startGameSequence.Length > 0)
-            DisplayDialogue(startGameSequence);
+            DisplayDialogue(startGameSequence, gameObject, "StartGame");
     }
 
     public void StartGame()
@@ -151,10 +151,12 @@ public class GameManager : MonoBehaviour
         hud.StartTimer();
     }
 
-    public void DisplayDialogue(DialogueSequence[] dialogue)
+    public void DisplayDialogue(DialogueSequence[] dialogue) => DisplayDialogue(dialogue, null, "");
+
+    public void DisplayDialogue(DialogueSequence[] dialogue, GameObject returnAddress, string _message)
     {
         Canvas_Dialogue newDialogue = Instantiate(Resources.Load("Canvas/" + "Canvas_Dialogue") as GameObject).GetComponent<Canvas_Dialogue>();
-        newDialogue.Init(dialogue);
+        newDialogue.Init(dialogue, returnAddress, _message);
     }
 
     void Pause()

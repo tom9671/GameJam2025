@@ -19,6 +19,9 @@ public class Canvas_Dialogue : MonoBehaviour
     Animator anim;
 
     DialogueSequence[] dialogue;
+    GameObject returnAddress;
+    string message;
+
     public TMP_Text displayText;
     public TMP_Text characterNameText;
     public Image[] transitionImages = new Image[2];
@@ -39,12 +42,16 @@ public class Canvas_Dialogue : MonoBehaviour
         }
     }
 
-    public void Init(DialogueSequence[] _dialogue)
+    public void Init(DialogueSequence[] _dialogue) => Init(_dialogue, null, "");
+
+    public void Init(DialogueSequence[] _dialogue, GameObject _returnAddress, string _message)
     {
         gm = GameManager.gm;
         anim = GetComponent<Animator>();
 
         dialogue = _dialogue;
+        returnAddress = _returnAddress;
+        message = _message;
 
         if (dialogue.Length < 1 || dialogue[0].dialogue == "")
             Destroy(gameObject);
@@ -128,7 +135,9 @@ public class Canvas_Dialogue : MonoBehaviour
     void AdvanceText()
     {
         messageIndex++;
-        if (messageIndex == dialogue.Length)
+        if (messageIndex < dialogue.Length && dialogue[messageIndex].dialogue.Length <= 0)
+            AdvanceText();
+        else if (messageIndex >= dialogue.Length)
             StopWriting();
         else
         {
@@ -138,9 +147,18 @@ public class Canvas_Dialogue : MonoBehaviour
 
     public void StopWriting()
     {
+        if (returnAddress)
+            returnAddress.SendMessage(message);
+
         writing = false;
         anim.SetTrigger("End");
         Destroy(gameObject, 5);
         Destroy(this);
+    }
+
+    public void SkipAllDialogue()
+    {
+        messageIndex = dialogue.Length;
+        AdvanceText();
     }
 }

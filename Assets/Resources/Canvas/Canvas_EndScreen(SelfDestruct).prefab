@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[1]'
       value: You, alongside the creature, have perished
       objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].dialogue
+      value: The ship was destroyed
+      objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -102,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6590127031791960285, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Name
-      value: Canvas_EndScreen(SeflDestruct)
+      value: Canvas_EndScreen(SelfDestruct)
       objectReference: {fileID: 0}
     - target: {fileID: 7959875379785200632, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_text

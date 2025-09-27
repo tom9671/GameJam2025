@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: 'dialogue.Array.data[1]'
       value: The creature was captured and studied
       objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].dialogue
+      value: The player was rescued
+      objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x
       value: 0
