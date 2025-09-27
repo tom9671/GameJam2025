@@ -13,9 +13,9 @@ public class EventModification
 public class EventParameter 
 {
     public string name;
-    public int index;
-
     public float currentValue;
+
+    [HideInInspector] public int index;
 }
 
 public class EventManager : MonoBehaviour

@@ -514,6 +514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: dialogueParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8119176086150552253, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: rooms.Array.size
       value: 3
@@ -557,9 +561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventParameters:
   - name: Paramter1
-    index: 0
     currentValue: 0
-  listOfEvents: 0
+    index: 0
 --- !u!1001 &6794549836844091875
 PrefabInstance:
   m_ObjectHideFlags: 0

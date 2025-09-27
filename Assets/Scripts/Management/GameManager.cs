@@ -1,12 +1,22 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 
 [System.Serializable]
 public class StartGameParameters
 {
     public float startDelay;
     public string[] dialogueOnStart;
+}
+
+[System.Serializable]
+public class DialogueParams 
+{
+    public string name;
+    public string[] dialogue;
+
+    [HideInInspector] public int index;
 }
 
 public class GameManager : MonoBehaviour
@@ -18,11 +28,15 @@ public class GameManager : MonoBehaviour
     public Vector2 panClamp;
 
     public StartGameParameters startGameParameters;
+    public DialogueParams[] dialogueParameters;
 
     Camera cam;
     EventManager _em; public EventManager em { get { return _em; } }
 
     GameObject pauseCanvas;
+
+    DropdownList<int> _dialogue; public DropdownList<int> dialogue { get { return _dialogue; } }
+    [Dropdown("_dialogue")] public int dialogues;
 
     void Awake()
     {
@@ -43,6 +57,58 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         
+    }
+
+    void OnValidate()
+    {
+        CheckIndeces();
+
+        if (dialogueParameters != null && dialogueParameters.Length > 0)
+        {
+            _dialogue = new DropdownList<int>();
+            for (int i = 0; i < dialogueParameters.Length; i++)
+            {
+                _dialogue.Add(dialogueParameters[i].name, dialogueParameters[i].index);
+            }
+        }
+    }
+
+    void CheckIndeces()
+    {
+        if (dialogueParameters != null && dialogueParameters.Length > 0)
+        {
+            //Checks that all internal indeces and names are unique
+            int highest = 0;
+            List<DialogueParams> allDialogue = new List<DialogueParams>();
+            for (int i = 0; i < dialogueParameters.Length; i++)
+            {
+                //Collects point markers into a list and tracks the highest
+                allDialogue.Add(dialogueParameters[i]);
+                if (highest < dialogueParameters[i].index)
+                    highest = dialogueParameters[i].index;
+            }
+
+            bool perfect;
+            do
+            {
+                perfect = true;
+                for (int i = 0; i < allDialogue.Count; i++)
+                {
+                    int checkMarker = allDialogue[i].index;
+                    for (int j = i + 1; j < allDialogue.Count; j++)
+                    {
+                        if (checkMarker == allDialogue[j].index)
+                        {
+                            perfect = false;
+                            highest++;
+                            allDialogue[j].index = highest;
+                            i = allDialogue.Count;
+                            j = allDialogue.Count;
+                        }
+                    }
+                }
+            } while (!perfect);
+        }
     }
 
     // Update is called once per frame
