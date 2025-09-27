@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        _em = GetComponent<EventManager>();
         if (_em != null)
         {
             events = _em.events;
