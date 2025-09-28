@@ -132,16 +132,23 @@ public class Canvas_Dialogue : MonoBehaviour
         displayText.text = dialogue[messageIndex].dialogue;
     }
 
-    void AdvanceText()
+    public void AdvanceText()
     {
-        messageIndex++;
-        if (messageIndex < dialogue.Length && dialogue[messageIndex].dialogue.Length <= 0)
-            AdvanceText();
-        else if (messageIndex >= dialogue.Length)
-            StopWriting();
+        if (writing)
+        {
+            SkipToEnd();
+        }
         else
         {
-            StartWriting();
+            messageIndex++;
+            if (messageIndex < dialogue.Length && dialogue[messageIndex].dialogue.Length <= 0)
+                AdvanceText();
+            else if (messageIndex >= dialogue.Length)
+                StopWriting();
+            else
+            {
+                StartWriting();
+            }
         }
     }
 
@@ -159,6 +166,7 @@ public class Canvas_Dialogue : MonoBehaviour
     public void SkipAllDialogue()
     {
         messageIndex = dialogue.Length;
+        writing = false;
         AdvanceText();
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4290619225649907858}
   - component: {fileID: 4954705319130101297}
   - component: {fileID: 1394721923748893551}
+  - component: {fileID: 5055106403681032927}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,8 +49,8 @@ MonoBehaviour:
   rescueTime: 0
   creatureTime: 1
   flashlightUses: 2
-  panSpeed: 10
-  panClamp: {x: -1, y: 1}
+  buoyancy: 7
+  stuck: 8
   startGameSequence:
   - dialogue: I have been researching the marine life of the Abyssopelagic Zone for
       nearly thirteen years.
@@ -172,15 +173,10 @@ MonoBehaviour:
       I can do to get to the surface faster. "
     characterName: Dr. Shelley
     displayImage: {fileID: 0}
-  dialogueParameters:
-  - name: 
-    dialogue: []
-    index: 0
   endings:
   - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}
   - {fileID: 1689743303923839224, guid: a93edb72f0a9d8241a638af25fb4809b, type: 3}
   - {fileID: 6391936399693850392, guid: df1085b58a2c8684dab30f1c039f5fc9, type: 3}
-  dialogues: 0
 --- !u!114 &1394721923748893551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,14 +194,17 @@ MonoBehaviour:
     currentValue: 0
     index: 6
   - name: RescueTime
-    currentValue: 600
+    currentValue: 300
     index: 0
   - name: CreatureTime
-    currentValue: 300
+    currentValue: 120
     index: 1
   - name: FlashlightUses
     currentValue: 5
     index: 2
+  - name: Buoyancy
+    currentValue: 1
+    index: 7
   - name: Key
     currentValue: 0
     index: 3
@@ -215,3 +214,63 @@ MonoBehaviour:
   - name: Flashlight
     currentValue: 0
     index: 5
+  - name: Stuck
+    currentValue: 0
+    index: 8
+--- !u!114 &5055106403681032927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4148035003532579638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144ede4d6d64feb4d9680895754919b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventHandler
+  events:
+  - byPassCondition: 0
+    eventParameter: 2
+    pOperator: 1
+    value: 5
+    checkAutomatically: 1
+    onConditionMet:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    triggered: 0
+    acquireItems: []
+  - byPassCondition: 0
+    eventParameter: 1
+    pOperator: 1
+    value: 60
+    checkAutomatically: 1
+    onConditionMet:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    triggered: 0
+    acquireItems: []

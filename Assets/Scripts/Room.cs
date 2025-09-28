@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Room : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Room : MonoBehaviour
     public Vector2 panClamp;
     public RectTransform pivot;
     RectTransform thisRect;
+    public Slider buoyancySlider;
     Canvas_GameHUD hud;
 
     Vector3 mousePos;
@@ -18,7 +20,11 @@ public class Room : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {/*
+    {
+        buoyancySlider.value = GameManager.gm.em.ParameterValue(GameManager.gm.buoyancy);
+
+
+        /*
         panClamp = new Vector2(-thisRect.sizeDelta.x * 0.5f, thisRect.sizeDelta.x * 0.5f) * 10;
         mousePos = Input.mousePosition;
         if (mousePos.x >= (Screen.width - 60) && pivot.transform.position.x > (panClamp.x + transform.position.x))

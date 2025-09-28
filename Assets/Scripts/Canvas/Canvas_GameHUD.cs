@@ -9,7 +9,7 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public int flashlightEffectiveness = 30;
     public Vector2 buoyancyClamp;
-    float buoyancyChange;
+    float buoyancyChange = -0.1f;
     public TMP_Text rescueTimer;
     public TMP_Text debugDisplay;
     public GameObject bottomPanel;
@@ -29,7 +29,7 @@ public class Canvas_GameHUD : MonoBehaviour
     void FixedUpdate()
     {
         buoyancy = gm.em.ParameterValue(gm.buoyancy);
-        buoyancy = Mathf.Clamp(buoyancy + buoyancyChange, buoyancyClamp.x, buoyancyClamp.y);
+        buoyancy = Mathf.Clamp(buoyancy + (buoyancyChange * Time.deltaTime), buoyancyClamp.x, buoyancyClamp.y);
         gm.em.SetParameter(gm.buoyancy, buoyancy);
 
         debugDisplay.text = "Rescue Time: " + rescueTime + "\n" +
@@ -69,13 +69,13 @@ public class Canvas_GameHUD : MonoBehaviour
             while (gm.em.ParameterValue(gm.stuck) == 1)
             {
                 gm.em.SetParameter(gm.buoyancy, 1);
-                buoyancyChange = 0;
                 yield return new WaitForSeconds(1);
             }
 
             buoyancy = gm.em.ParameterValue(gm.buoyancy);
             rescueTimer.text = GetTimeFromSeconds(rescueTime);
             yield return new WaitForSeconds(1 * (1f / buoyancy));
+            gm.em.SetParameter(gm.buoyancy, buoyancy);
             rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
             rescueTime -= 1;
             gm.em.SetParameter(gm.rescueTime, rescueTime);
@@ -94,7 +94,7 @@ public class Canvas_GameHUD : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
-            vignetteAnim.SetFloat("Distance", ((float)creatureTime / 120f));
+            vignetteAnim.SetFloat("Distance", ((float)creatureTime / 90f));
             creatureTime -= 1;
             gm.em.SetParameter(gm.creatureTime, creatureTime);
         }
@@ -130,8 +130,12 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void ChangeBuoyancy(int _difference)
     {
+        /*
         buoyancyChange += _difference * 2;
-        buoyancyChange = Mathf.Clamp(buoyancyChange, -Mathf.Abs(_difference), Mathf.Abs(_difference));
+        buoyancyChange = Mathf.Clamp(buoyancyChange, -Mathf.Abs(_difference), Mathf.Abs(_difference));*/
+        buoyancy = gm.em.ParameterValue(gm.buoyancy);
+        buoyancy = Mathf.Clamp(buoyancy + _difference, buoyancyClamp.x, buoyancyClamp.y);
+        gm.em.SetParameter(gm.buoyancy, buoyancy);
     }
 
     public void EndCountDown()
