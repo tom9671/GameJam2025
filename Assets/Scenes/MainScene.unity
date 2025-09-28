@@ -507,6 +507,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &610582907 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2480136831265815540, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
+  m_PrefabInstance: {fileID: 918760579779976047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863379689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,6 +2488,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7979141488302680084, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
+      propertyPath: vignetteAnim
+      value: 
+      objectReference: {fileID: 610582907}
     - target: {fileID: 7979141488302680084, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
       propertyPath: buoyancyClamp.x
       value: 0.5

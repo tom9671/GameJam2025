@@ -13,6 +13,7 @@ public class Canvas_GameHUD : MonoBehaviour
     public TMP_Text rescueTimer;
     public TMP_Text debugDisplay;
     public GameObject bottomPanel;
+    public Animator vignetteAnim;
 
     int rescueTime;
     int creatureTime;
@@ -26,7 +27,6 @@ public class Canvas_GameHUD : MonoBehaviour
     void FixedUpdate()
     {
         buoyancy = gm.em.ParameterValue(gm.buoyancy);
-        Debug.Log(buoyancy);
         buoyancy = Mathf.Clamp(buoyancy + buoyancyChange, buoyancyClamp.x, buoyancyClamp.y);
         gm.em.SetParameter(gm.buoyancy, buoyancy);
 
@@ -82,9 +82,9 @@ public class Canvas_GameHUD : MonoBehaviour
 
         while (creatureTime > 0)
         {
-            buoyancy = gm.em.ParameterValue(gm.buoyancy);
             yield return new WaitForSeconds(1);
             creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
+            vignetteAnim.SetFloat("Distance", ((float)creatureTime / 120f));
             creatureTime -= 1;
             gm.em.SetParameter(gm.creatureTime, creatureTime);
         }
