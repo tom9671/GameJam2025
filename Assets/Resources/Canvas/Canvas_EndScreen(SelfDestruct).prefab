@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -22,7 +22,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[0].dialogue
-      value: The ship was destroyed
+      value: "I guess if I\u2019m already going to die\u2026 I may as well take this
+        thing out with me. God I hope this works "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].dialogue
+      value: Yes. Hello? This is Officer Gayle of the Cator Station. We received
+        a distress signal from The Angler. We attempted to pull the ship up to the
+        surface, but received major interference.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].dialogue
+      value: 'Poor guy. If only they waited a few more minutes. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].characterName
+      value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].characterName
+      value: Officer
       objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x

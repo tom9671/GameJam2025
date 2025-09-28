@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -22,7 +22,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[0].dialogue
-      value: The player was rescued
+      value: "We made it That thing should be gone now that we\u2019re in direct
+        sunlight "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].dialogue
+      value: I told the rescue team about the thing that killed Captain James. I
+        refused to go back in, but they searched the entire ship and found nothing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].dialogue
+      value: "They said it\u2019s likely trauma from finding the Captain dead in
+        the engine room. But I know what I saw. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].dialogue
+      value: "I\u2019ve studied marine life long enough to know that there's \u2026
+        things down there we choose to ignore.  I like to think it\u2019s dead. Couldn\u2019t
+        take the change in pressure and died before it reached the surface. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].dialogue
+      value: "It must be dead. Even if it did survive, it hates direct light. It
+        wouldn\u2019t even try to come out during the daytime. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].dialogue
+      value: 'Yeah, it must be dead. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[6].dialogue
+      value: "But lately when I go to sleep at night, it\u2019s like I can see \u2026
+        something shifting in the shadows And\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[7].dialogue
+      value: 'And I wonder if I led it right where it wanted to be. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[6].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[7].characterName
+      value: Dr. Shelley
       objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x

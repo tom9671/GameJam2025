@@ -98,6 +98,17 @@ public class EventManager : MonoBehaviour
         return 0;
     }
 
+    public string ParameterName(int _index)
+    {
+        foreach (EventParameter ep in eventParameters)
+        {
+            if (_index == ep.index)
+                return ep.name;
+        }
+
+        return "";
+    }
+
     public void SetParameter(int _index, float _value)
     {
         foreach (EventParameter ep in eventParameters)

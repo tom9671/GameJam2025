@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4290619225649907858}
   - component: {fileID: 4954705319130101297}
-  - component: {fileID: 8119176086150552253}
   - component: {fileID: 1394721923748893551}
   m_Layer: 0
   m_Name: GameManager
@@ -48,33 +47,140 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rescueTime: 0
   creatureTime: 1
+  flashlightUses: 2
   panSpeed: 10
   panClamp: {x: -1, y: 1}
-  startGameParameters:
-    startDelay: 0
-    dialogueOnStart: []
-  dialogueParameters: []
+  startGameSequence:
+  - dialogue: I have been researching the marine life of the Abyssopelagic Zone for
+      nearly thirteen years.
+    characterName: Dr. Shelley
+    displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - dialogue: I have contributed a lot to my field, and my expeditions are directly
+      responsible for the discovery of oceanic life previously unknown to mankind.
+    characterName: Dr. Shelley
+    displayImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  - dialogue: Knowing all this makes the current status of this expedition all the
+      more humiliating.
+    characterName: Dr. Shelley
+    displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - dialogue: "Because of prior \u2026 incidents the university was unwilling to
+      fund another expedition to the Cator Ocean. However, proper analysis of the
+      sea life here proves essential to my research."
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "I was only able to gather enough money to procure this rather \u2026
+      unremarkable submarine. Captain James is competent enough, but I\u2019m not
+      used to working without a research team."
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
+      not as much sea life as I anticipated. We\u2019ve been down here for about
+      four days and I have only managed to gather three samples. I spent weeks studying
+      maps and migration patterns and am positive that this is the best location
+      to collect data."
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: Something must be scaring the animals away.
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: It must be that horrible engine. It seems to grow louder and more irritating
+      everyday. I wonder if the Captain can do anything about it.
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
+      ought to come out of that lab every once in a while. Have you found any more
+      samples?"
+    characterName: Captain
+    displayImage: {fileID: 0}
+  - dialogue: "Actually, that is what I was hoping to discuss with you. I wonder
+      if my difficulty finding suitable samples is due to how loud our engine is.
+      I was thinking you could go down to the engine room and see if there\u2019s
+      anything you could do."
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
+      been captain of this very boat for almost 34 years now. Angie may be a bit
+      noisy, but she\u2019s reliable where it counts."
+    characterName: Captain
+    displayImage: {fileID: 0}
+  - dialogue: "Age aside,  the marine life I\u2019m supposed to analyze here are
+      of the utmost importance and \u2026 Angie\u2019s \u2026  engine is scaring
+      my samples away and I would really appreciate it if you could go down there
+      and see if there\u2019s anything you could do to make the engine quieter."
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Well, no promises, but I\u2019ll go down and see if there's anything
+      I can do. Wait here. Make sure we don\u2019t steer right into a shark"
+    characterName: Captain
+    displayImage: {fileID: 0}
+  - dialogue: ...
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Sharks don\u2019t even come to this level of the ocean. "
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: I wish he would hur-
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: I wish he would hur-
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: 'What the hell was that  Captain? Captain James, are you there? '
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "\u2026 Captain? I\u2019m coming down there  "
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: 'Oh my god.  What What happ- '
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: What on earth is-
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: 'Some  Some thing is down there.  And the captain '
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: 'Oh God.  I need to call for help  '
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: God, what do these buttons even do?
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
+      has been compromised. The captain he\u2019s \u2026 he\u2019s. I need to get
+      to the surface. "
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: Hello?
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Hello, We\u2019ve received your distress signal. Once we find your
+      ship we should be able to get you up to the surface in about X minutes. "
+    characterName: Help
+    displayImage: {fileID: 0}
+  - dialogue: Oh thank God. I think our coordinates are at-
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Oh I know there\u2019s a flashlight around here somewhere"
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
+      get maybe X uses out of it if I\u2019m lucky. "
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  - dialogue: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
+      I can do to get to the surface faster. "
+    characterName: Dr. Shelley
+    displayImage: {fileID: 0}
+  dialogueParameters:
+  - name: 
+    dialogue: []
+    index: 0
   endings:
   - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}
   - {fileID: 1689743303923839224, guid: a93edb72f0a9d8241a638af25fb4809b, type: 3}
   - {fileID: 6391936399693850392, guid: df1085b58a2c8684dab30f1c039f5fc9, type: 3}
   dialogues: 0
---- !u!114 &8119176086150552253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4148035003532579638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cac0004b91df6084a9558a0324d8332d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1394721923748893551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventParameters:
+  - name: None
+    currentValue: 0
+    index: 6
   - name: RescueTime
     currentValue: 600
     index: 0
@@ -97,3 +206,12 @@ MonoBehaviour:
   - name: FlashlightUses
     currentValue: 5
     index: 2
+  - name: Key
+    currentValue: 0
+    index: 3
+  - name: Manual
+    currentValue: 0
+    index: 4
+  - name: Flashlight
+    currentValue: 0
+    index: 5

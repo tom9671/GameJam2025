@@ -23,15 +23,14 @@ public class GameManager : MonoBehaviour
     [Dropdown("events")] public int rescueTime = 0;
     [Dropdown("events")] public int creatureTime = 1;
     [Dropdown("events")] public int flashlightUses = 2;
-    public float panSpeed = 10;
-    public Vector2 panClamp;
+    [Dropdown("events")] public int buoyancy = 3;
 
     public DialogueSequence[] startGameSequence;
     public DialogueParams[] dialogueParameters;
     [NamedArray(typeof(eEnding))] public Canvas_EndScreen[] endings = new Canvas_EndScreen[3];
 
-    Camera cam;
     Canvas_GameHUD hud;
+    Canvas_Inventory inv;
     EventManager _em; public EventManager em { get { return _em; } }
 
     GameObject pauseCanvas;
@@ -52,7 +51,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        cam = FindFirstObjectByType<Camera>();
         hud = FindFirstObjectByType<Canvas_GameHUD>();
         _em = GetComponent<EventManager>();
     }
@@ -124,16 +122,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousePos = Input.mousePosition;
-        if (mousePos.x <= 30 && cam.transform.position.x > panClamp.x)
-        {
-            cam.transform.position += -Vector3.right * panSpeed * Time.deltaTime;
-        }
-        else if(mousePos.x >= (Screen.width - 30) && cam.transform.position.x < panClamp.y)
-        {
-            cam.transform.position += Vector3.right * panSpeed * Time.deltaTime;
-        }
-
         if (Input.GetButtonDown("Pause"))
         {
             Pause();
@@ -174,6 +162,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Inventory()
+    {
+        if (_gameOver)
+            return;
+
+        if (inv == null)
+        {
+            inv = Instantiate(Resources.Load("Canvas/" + "Canvas_Inventory") as GameObject).GetComponent<Canvas_Inventory>();
+            inv.Init();
+        }
+        else
+        {
+            inv.gameObject.SetActive(!inv.gameObject.active);
+            if (inv.gameObject.active)
+                inv.Init();
+        }
+    }
+
     public void RescuedEnding()
     {
         EndGame();
@@ -195,6 +201,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         _gameOver = true;
+        hud.EndCountDown();
         hud.bottomPanel.SetActive(false);
         if (pauseCanvas != null && pauseCanvas.active)
         {

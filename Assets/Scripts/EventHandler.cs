@@ -10,11 +10,15 @@ public enum eOperator { equals, less, greater}
 public class Event 
 {
     [Header("Condition")]
+    public bool byPassCondition;
     [Dropdown("events")] public int eventParameter;
     public eOperator pOperator;
     public float value;
+    public bool checkAutomatically;
     [Header("Result")]
     public UnityEvent onConditionMet;
+    [HideInInspector] public bool triggered;
+    public ItemClassForDropdown[] acquireItems;
 
     DropdownList<int> events;
     public void UpdateEvents(DropdownList<int> _events)
@@ -47,6 +51,8 @@ public class EventHandler : MonoBehaviour
             foreach (Event ev in events)
             {
                 ev.UpdateEvents(em.events);
+                foreach(ItemClassForDropdown ic in ev.acquireItems)
+                    ic.UpdateItems(em.events);
             }
         }
     }
@@ -71,28 +77,79 @@ public class EventHandler : MonoBehaviour
     {
         foreach (Event ev in events)
         {
-            switch (ev.pOperator) 
+            if (!ev.triggered && ev.checkAutomatically)
             {
-                case eOperator.equals:
-                    if (ev.value == em.ParameterValue(ev.eventParameter))
+                if (ev.byPassCondition)
+                {
+                    TriggerEvent(ev);
+                }
+                else
+                {
+                    switch (ev.pOperator)
                     {
-                        ev.onConditionMet.Invoke();
+                        case eOperator.equals:
+                            if (ev.value == em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
+                        case eOperator.less:
+                            if (ev.value > em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
+                        case eOperator.greater:
+                            if (ev.value < em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
                     }
-                    break;
-                case eOperator.less:
-                    if (ev.value > em.ParameterValue(ev.eventParameter))
-                        ev.onConditionMet.Invoke();
-                    break;
-                case eOperator.greater:
-                    if (ev.value < em.ParameterValue(ev.eventParameter))
-                        ev.onConditionMet.Invoke();
-                    break;
+                }
             }
         }
     }
 
-    public void Add()
+    void TriggerEvent(Event _ev)
+    {
+        foreach (ItemClassForDropdown it in _ev.acquireItems)
+        {
+            GameManager.gm.em.SetParameter(it.item, 1);
+        }
+
+        _ev.onConditionMet.Invoke();
+        _ev.triggered = true;
+    }
+
+    public void AcquireItem()
     {
 
+    }
+    
+    public void ManualCheck()
+    {
+        foreach (Event ev in events)
+        {
+            if (!ev.triggered && !ev.checkAutomatically)
+            {
+                if (ev.byPassCondition)
+                {
+                    TriggerEvent(ev);
+                }
+                else
+                {
+                    switch (ev.pOperator)
+                    {
+                        case eOperator.equals:
+                            if (ev.value == em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
+                        case eOperator.less:
+                            if (ev.value > em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
+                        case eOperator.greater:
+                            if (ev.value < em.ParameterValue(ev.eventParameter))
+                                TriggerEvent(ev);
+                            break;
+                    }
+                }
+            }
+        }
     }
 }

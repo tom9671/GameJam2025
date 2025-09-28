@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.size
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -18,7 +18,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[0].dialogue
-      value: The creature found and killed you
+      value: No no no no
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].dialogue
+      value: 'Oh God What.. What is that thing  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].dialogue
+      value: Yes. Hello? This is Officer Gayle of the Cator Station. We received
+        a distress signal from The Angler. We managed to pull the ship up to the
+        surface, but when we checked the interior we found nothing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].dialogue
+      value: 'Yeah, it was like no one was there at all. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[6].dialogue
+      value: 'There was a lot of science equipment onboard, so we assumed it was
+        some research expedition gone wrong. But, when we checked with the universities
+        no one was registered under this boat. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[7].dialogue
+      value: 'Strange. Someone had to have been on that ship.  Whatever happened,
+        I hope it happened quick.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].characterName
+      value: Dr. Shelley
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].characterName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].characterName
+      value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].characterName
+      value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[6].characterName
+      value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[7].characterName
+      value: Officer
       objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x

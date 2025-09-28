@@ -8,13 +8,15 @@ public class Canvas_GameHUD : MonoBehaviour
     GameManager gm;
 
     public int flashlightEffectiveness = 30;
-    public float intervalMultiplier = 1;
+    public Vector2 buoyancyClamp;
+    float buoyancyChange;
     public TMP_Text rescueTimer;
     public TMP_Text debugDisplay;
     public GameObject bottomPanel;
 
     int rescueTime;
     int creatureTime;
+    float buoyancy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +25,11 @@ public class Canvas_GameHUD : MonoBehaviour
 
     void FixedUpdate()
     {
+        buoyancy = gm.em.ParameterValue(gm.buoyancy);
+        Debug.Log(buoyancy);
+        buoyancy = Mathf.Clamp(buoyancy + buoyancyChange, buoyancyClamp.x, buoyancyClamp.y);
+        gm.em.SetParameter(gm.buoyancy, buoyancy);
+
         debugDisplay.text = "Rescue Time: " + rescueTime + "\n" +
             "Creature Time: " + creatureTime + "\n";
 
@@ -44,33 +51,45 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void StartTimer()
     {
-        StartCoroutine("CountDown");
+        StartCoroutine("CountDownRescue");
+        StartCoroutine("CountDownCreature");
     }
 
-    IEnumerator CountDown()
+    IEnumerator CountDownRescue()
     {
         gm = GameManager.gm;
 
         rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
+
+        while(rescueTime > 0)
+        {
+            buoyancy = gm.em.ParameterValue(gm.buoyancy);
+            rescueTimer.text = GetTimeFromSeconds(rescueTime);
+            yield return new WaitForSeconds(1 * (1f / buoyancy));
+            rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
+            rescueTime -= 1;
+            gm.em.SetParameter(gm.rescueTime, rescueTime);
+        }
+
+        gm.RescuedEnding();
+    }
+
+    IEnumerator CountDownCreature()
+    {
+        gm = GameManager.gm;
+
         creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
 
-        while(rescueTime > 0 && creatureTime > 0)
+        while (creatureTime > 0)
         {
-            rescueTimer.text = GetTimeFromSeconds(rescueTime);
-            yield return new WaitForSeconds(1 * (1f / intervalMultiplier));
-            rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
+            buoyancy = gm.em.ParameterValue(gm.buoyancy);
+            yield return new WaitForSeconds(1);
             creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
-            rescueTime -= 1;
             creatureTime -= 1;
-            gm.em.SetParameter(gm.rescueTime, rescueTime);
             gm.em.SetParameter(gm.creatureTime, creatureTime);
         }
 
-        rescueTimer.text = "0:00";
-        if(rescueTime <= 0)
-            gm.RescuedEnding();
-        else
-            gm.KilledEnding();
+        gm.KilledEnding();
     }
 
     string GetTimeFromSeconds(int _seconds)
@@ -93,5 +112,20 @@ public class Canvas_GameHUD : MonoBehaviour
             gm.em.SetParameter(gm.flashlightUses, flashlightsLeft);
             gm.em.SetParameter(gm.creatureTime, gm.em.ParameterValue(gm.creatureTime) + flashlightEffectiveness);
         }
+    }
+
+    public void Inventory() => gm.Inventory();
+
+    public void ChangeBuoyancy(int _difference)
+    {
+        buoyancyChange += _difference * 2;
+        buoyancyChange = Mathf.Clamp(buoyancyChange, -Mathf.Abs(_difference), Mathf.Abs(_difference));
+    }
+
+    public void EndCountDown()
+    {
+        rescueTimer.text = "0:00";
+        StopCoroutine("CountDownRescue");
+        StopCoroutine("CountDownCreature");
     }
 }

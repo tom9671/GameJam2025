@@ -18,7 +18,7 @@ public class Canvas_Dialogue : MonoBehaviour
     GameManager gm;
     Animator anim;
 
-    DialogueSequence[] dialogue;
+    public DialogueSequence[] dialogue;
     GameObject returnAddress;
     string message;
 
