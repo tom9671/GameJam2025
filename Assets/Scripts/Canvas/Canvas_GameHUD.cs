@@ -29,6 +29,9 @@ public class Canvas_GameHUD : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (gm.gameOver)
+            return;
+
         if (gm.em.ParameterValue(gm.leak) == 1)
             buoyancyClamp.x = 0.5f;
         else
@@ -70,7 +73,7 @@ public class Canvas_GameHUD : MonoBehaviour
 
         rescueTime = (int)gm.em.ParameterValue(gm.rescueTime);
 
-        while(rescueTime > 0)
+        while(rescueTime > 0 && !gm.gameOver)
         {
             while (gm.em.ParameterValue(gm.stuck) == 1)
             {
@@ -96,7 +99,7 @@ public class Canvas_GameHUD : MonoBehaviour
 
         creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
 
-        while (creatureTime > 0)
+        while (creatureTime > 0 && !gm.gameOver)
         {
             yield return new WaitForSeconds(1);
             creatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
@@ -160,5 +163,7 @@ public class Canvas_GameHUD : MonoBehaviour
         rescueTimer.text = "0:00";
         StopCoroutine("CountDownRescue");
         StopCoroutine("CountDownCreature");
+        vignetteAnim.gameObject.SetActive(false);
+        flashAnim.gameObject.SetActive(false);
     }
 }

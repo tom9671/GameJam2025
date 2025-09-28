@@ -17,6 +17,7 @@ public class Event
     public bool checkAutomatically;
     [Header("Result")]
     public UnityEvent onConditionMet;
+    public UnityEvent onConditionNotMet;
     [HideInInspector] public bool triggered;
     public ItemClassForDropdown[] acquireItems;
 
@@ -116,6 +117,11 @@ public class EventHandler : MonoBehaviour
         _ev.triggered = true;
     }
 
+    public void TriggerCounterEvent(Event _ev)
+    {
+        _ev.onConditionNotMet.Invoke();
+    }
+
     public void AcquireItem()
     {
 
@@ -138,14 +144,20 @@ public class EventHandler : MonoBehaviour
                         case eOperator.equals:
                             if (ev.value == em.ParameterValue(ev.eventParameter))
                                 TriggerEvent(ev);
+                            else
+                                TriggerCounterEvent(ev);
                             break;
                         case eOperator.less:
                             if (ev.value > em.ParameterValue(ev.eventParameter))
                                 TriggerEvent(ev);
+                            else
+                                TriggerCounterEvent(ev);
                             break;
                         case eOperator.greater:
                             if (ev.value < em.ParameterValue(ev.eventParameter))
                                 TriggerEvent(ev);
+                            else
+                                TriggerCounterEvent(ev);
                             break;
                     }
                 }
