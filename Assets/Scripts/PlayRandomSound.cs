@@ -14,6 +14,7 @@ public class PlayRandomSound : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
+        StartCoroutine("PlayClips");
     }
 
     IEnumerator PlayClips()

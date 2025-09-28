@@ -1,5 +1,450 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &889016904293880142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3077781390817232879}
+  - component: {fileID: 67566114870665527}
+  m_Layer: 0
+  m_Name: Alarm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3077781390817232879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889016904293880142}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2513036536096661009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &67566114870665527
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889016904293880142}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 33f2aeb7ed9491441a7c877a4d4598a5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1417189662545339111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7914945705627937938}
+  - component: {fileID: 7307239756614146119}
+  m_Layer: 0
+  m_Name: MainSubNoises
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7914945705627937938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417189662545339111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2513036536096661009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7307239756614146119
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417189662545339111}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: af62f2ee7192f724b82d7d3f5b57e910, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1825762175690169977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2513036536096661009}
+  m_Layer: 0
+  m_Name: Ambiance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2513036536096661009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825762175690169977}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7914945705627937938}
+  - {fileID: 3077781390817232879}
+  - {fileID: 7298615759871856730}
+  m_Father: {fileID: 4290619225649907858}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1898777516817087436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7298615759871856730}
+  - component: {fileID: 8338245119491100515}
+  - component: {fileID: 4010362689479902512}
+  m_Layer: 0
+  m_Name: RandomNoises
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7298615759871856730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898777516817087436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2513036536096661009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8338245119491100515
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898777516817087436}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 203d472e65e107740955eab49ba21a3b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4010362689479902512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898777516817087436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8dcd6c5c8647549b006284c48e7800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayRandomSound
+  frequency: 15
+  randomness: 3
+  allClips:
+  - {fileID: 8300000, guid: 203d472e65e107740955eab49ba21a3b, type: 3}
+  - {fileID: 8300000, guid: 373669e0c3ddacd489a9e32b69a3c1fe, type: 3}
+  - {fileID: 8300000, guid: 102d77bdff83de548a2e94748388ce1d, type: 3}
+  - {fileID: 8300000, guid: 102d77bdff83de548a2e94748388ce1d, type: 3}
+  - {fileID: 8300000, guid: 4e33aeb258d7dcf4aaa9416a3dead299, type: 3}
+  - {fileID: 8300000, guid: 7ea7744e9cd7e7a4bb34dddfc8c643dc, type: 3}
+  - {fileID: 8300000, guid: 9edbef21dad5a734382bda1beebe0c99, type: 3}
+  - {fileID: 8300000, guid: d0917f2fcd641fc46808f86789f78509, type: 3}
 --- !u!1 &4148035003532579638
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,7 +476,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2513036536096661009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4954705319130101297
@@ -57,29 +503,29 @@ MonoBehaviour:
     dialogue: I have been researching the marine life of the Abyssopelagic Zone for
       nearly thirteen years.
     audioClip: {fileID: 0}
-    displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: I have contributed a lot to my field, and my expeditions are directly
       responsible for the discovery of oceanic life previously unknown to mankind.
     audioClip: {fileID: 0}
-    displayImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: Knowing all this makes the current status of this expedition all the
       more humiliating.
     audioClip: {fileID: 0}
-    displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Because of prior \u2026 incidents the university was unwilling to
       fund another expedition to the Cator Ocean. However, proper analysis of the
       sea life here proves essential to my research."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "I was only able to gather enough money to procure this rather \u2026
       unremarkable submarine. Captain James is competent enough, but I\u2019m not
       used to working without a research team."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
       not as much sea life as I anticipated. We\u2019ve been down here for about
@@ -87,124 +533,166 @@ MonoBehaviour:
       maps and migration patterns and am positive that this is the best location
       to collect data."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: Something must be scaring the animals away.
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: It must be that horrible engine. It seems to grow louder and more irritating
       everyday. I wonder if the Captain can do anything about it.
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Captain
     dialogue: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
       ought to come out of that lab every once in a while. Have you found any more
       samples?"
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Actually, that is what I was hoping to discuss with you. I wonder
       if my difficulty finding suitable samples is due to how loud our engine is.
       I was thinking you could go down to the engine room and see if there\u2019s
       anything you could do."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Captain
     dialogue: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
       been captain of this very boat for almost 34 years now. Angie may be a bit
       noisy, but she\u2019s reliable where it counts."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Age aside,  the marine life I\u2019m supposed to analyze here are
       of the utmost importance and \u2026 Angie\u2019s \u2026  engine is scaring
       my samples away and I would really appreciate it if you could go down there
       and see if there\u2019s anything you could do to make the engine quieter."
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Captain
     dialogue: "Well, no promises, but I\u2019ll go down and see if there's anything
       I can do. Wait here. Make sure we don\u2019t steer right into a shark"
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: ...
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Sharks don\u2019t even come to this level of the ocean. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: I wish he would hur-
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
-    dialogue: 'What the hell was that  Captain? Captain James, are you there? '
-    audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    dialogue: 'What the hell was that Captain? Captain James, are you there? '
+    audioClip: {fileID: 8300000, guid: 7ea7744e9cd7e7a4bb34dddfc8c643dc, type: 3}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "\u2026 Captain? I\u2019m coming down there  "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 3789017996084736793, guid: fc2e1734a4f3ded40bba7471059c5efa, type: 3}
   - characterName: Dr. Shelley
     dialogue: 'Oh my god.  What What happ- '
-    audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: d8423937e92ab5442b126cc9a311a4e1, type: 3}
+    displayImage: {fileID: -6731501832290939206, guid: 70d74b056a6d5fe4c9e1de4dc5be94c8, type: 3}
   - characterName: Dr. Shelley
     dialogue: What on earth is-
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -6731501832290939206, guid: 70d74b056a6d5fe4c9e1de4dc5be94c8, type: 3}
   - characterName: Dr. Shelley
-    dialogue: 'Some  Some thing is down there.  And the captain '
+    dialogue: 'Some- Some thing is down there. And the captain '
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -6731501832290939206, guid: 70d74b056a6d5fe4c9e1de4dc5be94c8, type: 3}
   - characterName: Dr. Shelley
     dialogue: 'Oh God.  I need to call for help  '
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: -6731501832290939206, guid: 70d74b056a6d5fe4c9e1de4dc5be94c8, type: 3}
   - characterName: Dr. Shelley
     dialogue: God, what do these buttons even do?
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
       has been compromised. The captain he\u2019s \u2026 he\u2019s. I need to get
       to the surface. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: Hello?
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Help
     dialogue: "Hello, We\u2019ve received your distress signal. Once we find your
       ship we should be able to get you up to the surface in about X minutes. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: Oh thank God. I think our coordinates are at-
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Oh I know there\u2019s a flashlight around here somewhere"
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
       get maybe X uses out of it if I\u2019m lucky. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
     dialogue: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
       I can do to get to the surface faster. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 0}
+    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   endings:
   - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}
   - {fileID: 1689743303923839224, guid: a93edb72f0a9d8241a638af25fb4809b, type: 3}
   - {fileID: 6391936399693850392, guid: df1085b58a2c8684dab30f1c039f5fc9, type: 3}
+  onGameStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1898777516817087436}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 889016904293880142}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onGameOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1825762175690169977}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1394721923748893551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,10 +725,10 @@ MonoBehaviour:
     currentValue: 0
     index: 3
   - name: Manual
-    currentValue: 0
+    currentValue: 1
     index: 4
   - name: Flashlight
-    currentValue: 0
+    currentValue: 1
     index: 5
   - name: Stuck
     currentValue: 0
@@ -290,6 +778,31 @@ MonoBehaviour:
     eventParameter: 1
     pOperator: 0
     value: 60
+    checkAutomatically: 1
+    onConditionMet:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    onConditionNotMet:
+      m_PersistentCalls:
+        m_Calls: []
+    triggered: 0
+    acquireItems: []
+  - byPassCondition: 0
+    eventParameter: 1
+    pOperator: 0
+    value: 75
     checkAutomatically: 1
     onConditionMet:
       m_PersistentCalls:
