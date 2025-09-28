@@ -11,12 +11,11 @@ public class WeldingMinigame : MonoBehaviour
 
     public UnityEvent onCompleteMinigame;
 
-    AudioSource source;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        source = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -35,7 +34,6 @@ public class WeldingMinigame : MonoBehaviour
         fixedCracks++;
         if(fixedCracks >= totalCracks)
         {
-            source.Play();
             GameManager.gm.em.SetParameter(GameManager.gm.leak, 0);
             onCompleteMinigame.Invoke();
         }

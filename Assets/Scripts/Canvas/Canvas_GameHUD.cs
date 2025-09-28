@@ -124,8 +124,9 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void UseFlashlight()
     {
+        /*
         if(flashSource == null)
-            flashSource = flashAnim.GetComponent<AudioSource>();
+            flashSource = flashAnim.GetComponent<AudioSource>();*/
 
         if(flashSource != null)
         {

@@ -7496,6 +7496,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[25].dialogue
+      value: "Hello, We\u2019ve received your distress signal. Once we find your
+        ship we should be able to get you up to the surface in about 5 minutes. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
+      propertyPath: startGameSequence.Array.data[28].dialogue
+      value: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
+        get maybe 5 uses out of it if I\u2019m lucky. "
+      objectReference: {fileID: 0}
     - target: {fileID: 5055106403681032927, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: events.Array.data[0].onConditionMet.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7649,7 +7659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 798323101067889664, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
+    - {fileID: 967083193865360949, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
+    - {fileID: 8958560802620994115, guid: 9593ad177dd79824ba9b18f954d9b14b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7660,7 +7673,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 891250040500834368}
-  - {fileID: 144068464}
   - {fileID: 918760579779976047}
   - {fileID: 1414880468}
   - {fileID: 1814139639}
+  - {fileID: 144068464}
