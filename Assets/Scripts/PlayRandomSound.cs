@@ -18,8 +18,10 @@ public class PlayRandomSound : MonoBehaviour
 
     IEnumerator PlayClips()
     {
-        yield return new WaitForSeconds(frequency + Random.Range(-randomness, randomness));
-
-        source.PlayOneShot(allClips[Random.Range(0, allClips.Length)]);
+        while (true)
+        {
+            yield return new WaitForSeconds(frequency + Random.Range(-randomness, randomness));
+            source.PlayOneShot(allClips[Random.Range(0, allClips.Length)]);
+        }
     }
 }
