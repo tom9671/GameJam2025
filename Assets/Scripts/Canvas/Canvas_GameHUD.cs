@@ -15,6 +15,7 @@ public class Canvas_GameHUD : MonoBehaviour
     public GameObject bottomPanel;
     public Animator vignetteAnim;
     public Animator flashAnim;
+    AudioSource flashSource;
 
     int rescueTime;
     int creatureTime;
@@ -120,6 +121,14 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void UseFlashlight()
     {
+        if(flashSource == null)
+            flashSource = flashAnim.GetComponent<AudioSource>();
+
+        if(flashSource != null)
+        {
+            flashSource.Stop();
+            flashSource.Play();
+        }
         flashAnim.SetTrigger("Flash");
         int flashlightsLeft = (int)gm.em.ParameterValue(gm.flashlightUses);
         if(flashlightsLeft > 0)

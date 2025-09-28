@@ -365,13 +365,113 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 274386863544062218, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 41053031}
   m_SourcePrefab: {fileID: 100100000, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
 --- !u!1 &41053023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 274386863544062218, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
   m_PrefabInstance: {fileID: 41053022}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &41053031
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41053023}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &144068461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,13 +2494,113 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 274386863544062218, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1448185331}
   m_SourcePrefab: {fileID: 100100000, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
 --- !u!1 &1448185323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 274386863544062218, guid: 707e2eeef97d8c24fa6868058311a168, type: 3}
   m_PrefabInstance: {fileID: 1448185322}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1448185331
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448185323}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1456250976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4746,79 +4946,6 @@ PrefabInstance:
     - target: {fileID: 4290619225649907858, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.size
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[16].dialogue
-      value: 'What the hell was that  Captain? Captain James, are you there? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[17].dialogue
-      value: "\u2026 Captain? I\u2019m coming down there  "
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[18].dialogue
-      value: 'Oh my god.  What What happ- '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[19].dialogue
-      value: What on earth is-
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[20].dialogue
-      value: 'Some  Some thing is down there.  And the captain '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[21].dialogue
-      value: 'Oh God.  I need to call for help  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[22].dialogue
-      value: God, what do these buttons even do?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[23].dialogue
-      value: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
-        has been compromised. The captain he\u2019s \u2026 he\u2019s. I need to get
-        to the surface. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[24].dialogue
-      value: Hello?
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[25].dialogue
-      value: "Hello, We\u2019ve received your distress signal. Once we find your
-        ship we should be able to get you up to the surface in about X minutes. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[26].dialogue
-      value: Oh thank God. I think our coordinates are at-
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[27].dialogue
-      value: "Oh I know there\u2019s a flashlight around here somewhere"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[28].dialogue
-      value: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
-        get maybe X uses out of it if I\u2019m lucky. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[29].dialogue
-      value: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
-        I can do to get to the surface faster. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[25].characterName
-      value: Help
-      objectReference: {fileID: 0}
-    - target: {fileID: 4954705319130101297, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
-      propertyPath: startGameSequence.Array.data[26].characterName
-      value: Dr. Shelley
       objectReference: {fileID: 0}
     - target: {fileID: 5055106403681032927, guid: f3307428a937a6b48a6b590ef8496ff9, type: 3}
       propertyPath: events.Array.data[0].onConditionMet.m_PersistentCalls.m_Calls.Array.data[0].m_Target

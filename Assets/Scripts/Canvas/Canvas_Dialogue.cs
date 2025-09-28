@@ -6,8 +6,9 @@ using System.Collections;
 [System.Serializable]
 public class DialogueSequence 
 {
-    public string dialogue;
     public string characterName;
+    public string dialogue;
+    public AudioClip audioClip;
     public Sprite displayImage;
 }
 
@@ -17,6 +18,7 @@ public class Canvas_Dialogue : MonoBehaviour
 
     GameManager gm;
     Animator anim;
+    AudioSource source;
 
     public DialogueSequence[] dialogue;
     GameObject returnAddress;
@@ -37,6 +39,7 @@ public class Canvas_Dialogue : MonoBehaviour
     {
         gm = GameManager.gm;
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
         if (!writing)
         {
             Init(dialogue);
@@ -49,6 +52,7 @@ public class Canvas_Dialogue : MonoBehaviour
     {
         gm = GameManager.gm;
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
 
         dialogue = _dialogue;
         returnAddress = _returnAddress;
@@ -97,6 +101,8 @@ public class Canvas_Dialogue : MonoBehaviour
         characterNameText.text = dialogue[messageIndex].characterName;
         writing = true;
         characterIndex = 0;
+        if(dialogue[messageIndex].audioClip)
+            source.PlayOneShot(dialogue[messageIndex].audioClip);
         StartCoroutine(WriteText());
 
         transitionImages[1].sprite = transitionImages[0].sprite;

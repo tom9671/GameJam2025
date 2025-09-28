@@ -53,126 +53,153 @@ MonoBehaviour:
   stuck: 8
   leak: 9
   startGameSequence:
-  - dialogue: I have been researching the marine life of the Abyssopelagic Zone for
+  - characterName: Dr. Shelley
+    dialogue: I have been researching the marine life of the Abyssopelagic Zone for
       nearly thirteen years.
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  - dialogue: I have contributed a lot to my field, and my expeditions are directly
+  - characterName: Dr. Shelley
+    dialogue: I have contributed a lot to my field, and my expeditions are directly
       responsible for the discovery of oceanic life previously unknown to mankind.
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - dialogue: Knowing all this makes the current status of this expedition all the
+  - characterName: Dr. Shelley
+    dialogue: Knowing all this makes the current status of this expedition all the
       more humiliating.
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  - dialogue: "Because of prior \u2026 incidents the university was unwilling to
+  - characterName: Dr. Shelley
+    dialogue: "Because of prior \u2026 incidents the university was unwilling to
       fund another expedition to the Cator Ocean. However, proper analysis of the
       sea life here proves essential to my research."
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "I was only able to gather enough money to procure this rather \u2026
+  - characterName: Dr. Shelley
+    dialogue: "I was only able to gather enough money to procure this rather \u2026
       unremarkable submarine. Captain James is competent enough, but I\u2019m not
       used to working without a research team."
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
+  - characterName: Dr. Shelley
+    dialogue: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
       not as much sea life as I anticipated. We\u2019ve been down here for about
       four days and I have only managed to gather three samples. I spent weeks studying
       maps and migration patterns and am positive that this is the best location
       to collect data."
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: Something must be scaring the animals away.
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: Something must be scaring the animals away.
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: It must be that horrible engine. It seems to grow louder and more irritating
+  - characterName: Dr. Shelley
+    dialogue: It must be that horrible engine. It seems to grow louder and more irritating
       everyday. I wonder if the Captain can do anything about it.
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
+  - characterName: Captain
+    dialogue: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
       ought to come out of that lab every once in a while. Have you found any more
       samples?"
-    characterName: Captain
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Actually, that is what I was hoping to discuss with you. I wonder
+  - characterName: Dr. Shelley
+    dialogue: "Actually, that is what I was hoping to discuss with you. I wonder
       if my difficulty finding suitable samples is due to how loud our engine is.
       I was thinking you could go down to the engine room and see if there\u2019s
       anything you could do."
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
+  - characterName: Captain
+    dialogue: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
       been captain of this very boat for almost 34 years now. Angie may be a bit
       noisy, but she\u2019s reliable where it counts."
-    characterName: Captain
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Age aside,  the marine life I\u2019m supposed to analyze here are
+  - characterName: Dr. Shelley
+    dialogue: "Age aside,  the marine life I\u2019m supposed to analyze here are
       of the utmost importance and \u2026 Angie\u2019s \u2026  engine is scaring
       my samples away and I would really appreciate it if you could go down there
       and see if there\u2019s anything you could do to make the engine quieter."
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Well, no promises, but I\u2019ll go down and see if there's anything
+  - characterName: Captain
+    dialogue: "Well, no promises, but I\u2019ll go down and see if there's anything
       I can do. Wait here. Make sure we don\u2019t steer right into a shark"
-    characterName: Captain
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: ...
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: ...
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Sharks don\u2019t even come to this level of the ocean. "
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: "Sharks don\u2019t even come to this level of the ocean. "
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: I wish he would hur-
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: I wish he would hur-
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: I wish he would hur-
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: 'What the hell was that  Captain? Captain James, are you there? '
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: 'What the hell was that  Captain? Captain James, are you there? '
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: "\u2026 Captain? I\u2019m coming down there  "
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "\u2026 Captain? I\u2019m coming down there  "
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: 'Oh my god.  What What happ- '
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: 'Oh my god.  What What happ- '
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: What on earth is-
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: What on earth is-
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: 'Some  Some thing is down there.  And the captain '
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: 'Some  Some thing is down there.  And the captain '
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: 'Oh God.  I need to call for help  '
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: 'Oh God.  I need to call for help  '
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: God, what do these buttons even do?
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: God, what do these buttons even do?
-    characterName: Dr. Shelley
-    displayImage: {fileID: 0}
-  - dialogue: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
+  - characterName: Dr. Shelley
+    dialogue: "Hello? Hello? Is anyone there? I\u2019m onboard The Angler. Our ship
       has been compromised. The captain he\u2019s \u2026 he\u2019s. I need to get
       to the surface. "
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: Hello?
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: Hello?
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Hello, We\u2019ve received your distress signal. Once we find your
+  - characterName: Help
+    dialogue: "Hello, We\u2019ve received your distress signal. Once we find your
       ship we should be able to get you up to the surface in about X minutes. "
-    characterName: Help
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: Oh thank God. I think our coordinates are at-
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: Oh thank God. I think our coordinates are at-
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Oh I know there\u2019s a flashlight around here somewhere"
-    characterName: Dr. Shelley
+  - characterName: Dr. Shelley
+    dialogue: "Oh I know there\u2019s a flashlight around here somewhere"
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
+  - characterName: Dr. Shelley
+    dialogue: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
       get maybe X uses out of it if I\u2019m lucky. "
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
-  - dialogue: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
+  - characterName: Dr. Shelley
+    dialogue: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
       I can do to get to the surface faster. "
-    characterName: Dr. Shelley
+    audioClip: {fileID: 0}
     displayImage: {fileID: 0}
   endings:
   - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}

@@ -8,14 +8,15 @@ public class SteeringMinigame : MonoBehaviour
     public float speed;
 
     public Transform submarine;
-
     public UnityEvent onCompleteMinigame;
+
+    AudioSource source;
 
     bool won;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,7 @@ public class SteeringMinigame : MonoBehaviour
             submarine.localPosition = new Vector3(Mathf.Clamp(submarine.localPosition.x, shipPosClamp.x, shipPosClamp.y), submarine.localPosition.y, submarine.localPosition.z);
             if (submarine.localPosition.x >= shipPosClamp.y)
             {
+                source.Play();
                 won = true;
                 GameManager.gm.em.SetParameter(GameManager.gm.stuck, 0);
                 onCompleteMinigame.Invoke();
