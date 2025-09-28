@@ -51,6 +51,7 @@ MonoBehaviour:
   flashlightUses: 2
   buoyancy: 7
   stuck: 8
+  leak: 9
   startGameSequence:
   - dialogue: I have been researching the marine life of the Abyssopelagic Zone for
       nearly thirteen years.
@@ -197,7 +198,7 @@ MonoBehaviour:
     currentValue: 300
     index: 0
   - name: CreatureTime
-    currentValue: 120
+    currentValue: 90
     index: 1
   - name: FlashlightUses
     currentValue: 5
@@ -217,6 +218,9 @@ MonoBehaviour:
   - name: Stuck
     currentValue: 0
     index: 8
+  - name: Leak
+    currentValue: 0
+    index: 9
 --- !u!114 &5055106403681032927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,8 +258,30 @@ MonoBehaviour:
     acquireItems: []
   - byPassCondition: 0
     eventParameter: 1
-    pOperator: 1
+    pOperator: 0
     value: 60
+    checkAutomatically: 1
+    onConditionMet:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    triggered: 0
+    acquireItems: []
+  - byPassCondition: 0
+    eventParameter: 7
+    pOperator: 2
+    value: 1
     checkAutomatically: 1
     onConditionMet:
       m_PersistentCalls:

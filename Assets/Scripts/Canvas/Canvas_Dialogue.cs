@@ -25,6 +25,7 @@ public class Canvas_Dialogue : MonoBehaviour
     public TMP_Text displayText;
     public TMP_Text characterNameText;
     public Image[] transitionImages = new Image[2];
+    public Slider progressSlider;
     public float textInterval = 0.1f;
     float intervalMult;
     bool writing;
@@ -52,6 +53,8 @@ public class Canvas_Dialogue : MonoBehaviour
         dialogue = _dialogue;
         returnAddress = _returnAddress;
         message = _message;
+
+        progressSlider.maxValue = dialogue.Length;
 
         if (dialogue.Length < 1 || dialogue[0].dialogue == "")
             Destroy(gameObject);
@@ -141,6 +144,7 @@ public class Canvas_Dialogue : MonoBehaviour
         else
         {
             messageIndex++;
+            progressSlider.value = messageIndex;
             if (messageIndex < dialogue.Length && dialogue[messageIndex].dialogue.Length <= 0)
                 AdvanceText();
             else if (messageIndex >= dialogue.Length)

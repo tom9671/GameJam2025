@@ -28,6 +28,11 @@ public class Canvas_GameHUD : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (gm.em.ParameterValue(gm.leak) == 1)
+            buoyancyClamp.x = 0.5f;
+        else
+            buoyancyClamp.x = 1;
+
         buoyancy = gm.em.ParameterValue(gm.buoyancy);
         buoyancy = Mathf.Clamp(buoyancy + (buoyancyChange * Time.deltaTime), buoyancyClamp.x, buoyancyClamp.y);
         gm.em.SetParameter(gm.buoyancy, buoyancy);
@@ -130,6 +135,9 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void ChangeBuoyancy(int _difference)
     {
+        if (gm.em.ParameterValue(gm.leak) == 1)
+            return;
+
         /*
         buoyancyChange += _difference * 2;
         buoyancyChange = Mathf.Clamp(buoyancyChange, -Mathf.Abs(_difference), Mathf.Abs(_difference));*/

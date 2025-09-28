@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     [Dropdown("events")] public int flashlightUses;
     [Dropdown("events")] public int buoyancy;
     [Dropdown("events")] public int stuck;
+    [Dropdown("events")] public int leak;
 
     public DialogueSequence[] startGameSequence;
     //public DialogueParams[] dialogueParameters;
@@ -184,6 +185,11 @@ public class GameManager : MonoBehaviour
     public void CauseStuck()
     {
         _em.SetParameter(stuck, 1);
+    }
+
+    public void CauseLeak()
+    {
+        _em.SetParameter(leak, 1);
     }
 
     public void RescuedEnding()
