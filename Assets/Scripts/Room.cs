@@ -18,7 +18,7 @@ public class Room : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         panClamp = new Vector2(-thisRect.sizeDelta.x * 0.5f, thisRect.sizeDelta.x * 0.5f) * 10;
         mousePos = Input.mousePosition;
         if (mousePos.x >= (Screen.width - 60) && pivot.transform.position.x > (panClamp.x + transform.position.x))
@@ -28,7 +28,7 @@ public class Room : MonoBehaviour
         else if( mousePos.x <= 60 && pivot.transform.position.x < (panClamp.y + transform.position.x))
         {
             pivot.transform.position += Vector3.right * panSpeed * Time.deltaTime;
-        }
+        }*/
     }
 
     public void ChangeBuoyancy(int _difference) => hud.ChangeBuoyancy(_difference);
