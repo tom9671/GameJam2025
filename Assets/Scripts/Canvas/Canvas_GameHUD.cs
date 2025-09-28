@@ -47,9 +47,9 @@ public class Canvas_GameHUD : MonoBehaviour
         if (!gm.gameOver)
         {
             Vector3 mousePos = Input.mousePosition;
-            if (mousePos.y <= 30)
+            if (mousePos.y <= 60)
                 bottomPanel.SetActive(true);
-            else if (mousePos.y > 100)
+            else if (mousePos.y > 150)
                 bottomPanel.SetActive(false);
         }
     }

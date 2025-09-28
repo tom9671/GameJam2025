@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
+using UnityEngine.Events;
 
 public enum eEnding { rescued, selfDestruct, killed}
 
@@ -41,6 +42,9 @@ public class GameManager : MonoBehaviour
     [Dropdown("_dialogue")] public int dialogues;*/
 
     bool _gameOver; public bool gameOver { get { return _gameOver; } }
+
+    public UnityEvent onGameStart;
+    public UnityEvent onGameOver;
 
     void Awake()
     {
@@ -138,6 +142,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        onGameStart.Invoke();
         hud.StartTimer();
     }
 
@@ -212,6 +217,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        onGameOver.Invoke();
         _gameOver = true;
         hud.EndCountDown();
         hud.bottomPanel.SetActive(false);

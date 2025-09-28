@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: 'dialogue.Array.data[0]'
@@ -35,25 +35,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[3].dialogue
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].dialogue
       value: Yes. Hello? This is Officer Gayle of the Cator Station. We received
         a distress signal from The Angler. We attempted to pull the ship up to the
         surface, but received major interference.
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
-      propertyPath: dialogue.Array.data[4].dialogue
+      propertyPath: dialogue.Array.data[5].dialogue
       value: 'Poor guy. If only they waited a few more minutes. '
       objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 09d676371eb61b1448abd742c0d5139a, type: 3}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[0].characterName
       value: Dr. Shelley
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[3].characterName
-      value: Officer
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[4].characterName
       value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].characterName
+      value: Officer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469613478354295892, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: m_Volume
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6292759612111978707, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_Pivot.x
