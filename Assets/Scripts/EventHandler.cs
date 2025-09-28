@@ -152,4 +152,6 @@ public class EventHandler : MonoBehaviour
             }
         }
     }
+
+    public void CauseStuck() => GameManager.gm.CauseStuck();
 }

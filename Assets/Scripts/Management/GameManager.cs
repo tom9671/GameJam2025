@@ -20,13 +20,14 @@ public class GameManager : MonoBehaviour
     Vector3 mousePos;
 
     DropdownList<int> events;
-    [Dropdown("events")] public int rescueTime = 0;
-    [Dropdown("events")] public int creatureTime = 1;
-    [Dropdown("events")] public int flashlightUses = 2;
-    [Dropdown("events")] public int buoyancy = 3;
+    [Dropdown("events")] public int rescueTime;
+    [Dropdown("events")] public int creatureTime;
+    [Dropdown("events")] public int flashlightUses;
+    [Dropdown("events")] public int buoyancy;
+    [Dropdown("events")] public int stuck;
 
     public DialogueSequence[] startGameSequence;
-    public DialogueParams[] dialogueParameters;
+    //public DialogueParams[] dialogueParameters;
     [NamedArray(typeof(eEnding))] public Canvas_EndScreen[] endings = new Canvas_EndScreen[3];
 
     Canvas_GameHUD hud;
@@ -34,9 +35,9 @@ public class GameManager : MonoBehaviour
     EventManager _em; public EventManager em { get { return _em; } }
 
     GameObject pauseCanvas;
-
+    /*
     DropdownList<int> _dialogue; public DropdownList<int> dialogue { get { return _dialogue; } }
-    [Dropdown("_dialogue")] public int dialogues;
+    [Dropdown("_dialogue")] public int dialogues;*/
 
     bool _gameOver; public bool gameOver { get { return _gameOver; } }
 
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     void OnValidate()
     {
         CheckIndeces();
-
+        /*
         if (dialogueParameters != null && dialogueParameters.Length > 0)
         {
             _dialogue = new DropdownList<int>();
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour
             {
                 _dialogue.Add(dialogueParameters[i].name, dialogueParameters[i].index);
             }
-        }
+        }*/
 
         _em = GetComponent<EventManager>();
         if (_em != null)
@@ -82,7 +83,7 @@ public class GameManager : MonoBehaviour
     }
 
     void CheckIndeces()
-    {
+    {/*
         if (dialogueParameters != null && dialogueParameters.Length > 0)
         {
             //Checks that all internal indeces and names are unique
@@ -116,7 +117,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
             } while (!perfect);
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -178,6 +179,11 @@ public class GameManager : MonoBehaviour
             if (inv.gameObject.active)
                 inv.Init();
         }
+    }
+
+    public void CauseStuck()
+    {
+        _em.SetParameter(stuck, 1);
     }
 
     public void RescuedEnding()

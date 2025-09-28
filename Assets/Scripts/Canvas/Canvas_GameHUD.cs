@@ -14,10 +14,12 @@ public class Canvas_GameHUD : MonoBehaviour
     public TMP_Text debugDisplay;
     public GameObject bottomPanel;
     public Animator vignetteAnim;
+    public Animator flashAnim;
 
     int rescueTime;
     int creatureTime;
     float buoyancy;
+    int maxCreatureTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,6 +53,7 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void StartTimer()
     {
+        maxCreatureTime = (int)gm.em.ParameterValue(gm.creatureTime);
         StartCoroutine("CountDownRescue");
         StartCoroutine("CountDownCreature");
     }
@@ -63,6 +66,13 @@ public class Canvas_GameHUD : MonoBehaviour
 
         while(rescueTime > 0)
         {
+            while (gm.em.ParameterValue(gm.stuck) == 1)
+            {
+                gm.em.SetParameter(gm.buoyancy, 1);
+                buoyancyChange = 0;
+                yield return new WaitForSeconds(1);
+            }
+
             buoyancy = gm.em.ParameterValue(gm.buoyancy);
             rescueTimer.text = GetTimeFromSeconds(rescueTime);
             yield return new WaitForSeconds(1 * (1f / buoyancy));
@@ -105,12 +115,14 @@ public class Canvas_GameHUD : MonoBehaviour
 
     public void UseFlashlight()
     {
+        flashAnim.SetTrigger("Flash");
         int flashlightsLeft = (int)gm.em.ParameterValue(gm.flashlightUses);
         if(flashlightsLeft > 0)
         {
             flashlightsLeft--;
             gm.em.SetParameter(gm.flashlightUses, flashlightsLeft);
-            gm.em.SetParameter(gm.creatureTime, gm.em.ParameterValue(gm.creatureTime) + flashlightEffectiveness);
+            float newCreatureTime = Mathf.Clamp(gm.em.ParameterValue(gm.creatureTime) + flashlightEffectiveness, 0, maxCreatureTime);
+            gm.em.SetParameter(gm.creatureTime, newCreatureTime);
         }
     }
 
