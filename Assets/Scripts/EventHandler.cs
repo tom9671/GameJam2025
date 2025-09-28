@@ -44,8 +44,8 @@ public class EventHandler : MonoBehaviour
 
     void OnValidate()
     {
-        if(em == null)
-            em = FindFirstObjectByType<GameManager>().GetComponent<EventManager>();
+        if (em == null)
+            em = FindFirstObjectByType<EventManager>();
 
         if (events != null)
         {
