@@ -503,29 +503,29 @@ MonoBehaviour:
     dialogue: I have been researching the marine life of the Abyssopelagic Zone for
       nearly thirteen years.
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: I have contributed a lot to my field, and my expeditions are directly
       responsible for the discovery of oceanic life previously unknown to mankind.
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: Knowing all this makes the current status of this expedition all the
       more humiliating.
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Because of prior \u2026 incidents the university was unwilling to
       fund another expedition to the Cator Ocean. However, proper analysis of the
       sea life here proves essential to my research."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "I was only able to gather enough money to procure this rather \u2026
       unremarkable submarine. Captain James is competent enough, but I\u2019m not
       used to working without a research team."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "If this expedition wasn\u2019t having enough setbacks, there\u2019s
       not as much sea life as I anticipated. We\u2019ve been down here for about
@@ -533,63 +533,63 @@ MonoBehaviour:
       maps and migration patterns and am positive that this is the best location
       to collect data."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: Something must be scaring the animals away.
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: It must be that horrible engine. It seems to grow louder and more irritating
       everyday. I wonder if the Captain can do anything about it.
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Captain
     dialogue: "Ah! Dr. Shelley, How are you? It\u2019s good to see your face, you
       ought to come out of that lab every once in a while. Have you found any more
       samples?"
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Actually, that is what I was hoping to discuss with you. I wonder
       if my difficulty finding suitable samples is due to how loud our engine is.
       I was thinking you could go down to the engine room and see if there\u2019s
       anything you could do."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Captain
     dialogue: "Well, some engine noise is pretty standard on a ship this old. I\u2019ve
       been captain of this very boat for almost 34 years now. Angie may be a bit
       noisy, but she\u2019s reliable where it counts."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Age aside,  the marine life I\u2019m supposed to analyze here are
       of the utmost importance and \u2026 Angie\u2019s \u2026  engine is scaring
       my samples away and I would really appreciate it if you could go down there
       and see if there\u2019s anything you could do to make the engine quieter."
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Captain
     dialogue: "Well, no promises, but I\u2019ll go down and see if there's anything
       I can do. Wait here. Make sure we don\u2019t steer right into a shark"
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: ...
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Sharks don\u2019t even come to this level of the ocean. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: I wish he would hur-
     audioClip: {fileID: 0}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: 'What the hell was that Captain? Captain James, are you there? '
     audioClip: {fileID: 8300000, guid: 7ea7744e9cd7e7a4bb34dddfc8c643dc, type: 3}
-    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
+    displayImage: {fileID: -289202680386340095, guid: 37d36a1c56cb69b45b13ea8395e5104c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "\u2026 Captain? I\u2019m coming down there  "
     audioClip: {fileID: 0}
@@ -624,9 +624,9 @@ MonoBehaviour:
     dialogue: Hello?
     audioClip: {fileID: 0}
     displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
-  - characterName: Help
+  - characterName: Dispatch
     dialogue: "Hello, We\u2019ve received your distress signal. Once we find your
-      ship we should be able to get you up to the surface in about X minutes. "
+      ship we should be able to get you up to the surface in about 5 minutes. "
     audioClip: {fileID: 0}
     displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
   - characterName: Dr. Shelley
@@ -636,17 +636,17 @@ MonoBehaviour:
   - characterName: Dr. Shelley
     dialogue: "Oh I know there\u2019s a flashlight around here somewhere"
     audioClip: {fileID: 0}
-    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
+    displayImage: {fileID: -4867115397657285082, guid: 1361acf2cd2452d4088b28d9b6136b3c, type: 3}
   - characterName: Dr. Shelley
     dialogue: "Ah! There it is. Hmmph the battery\u2019s running low. I think I can
-      get maybe X uses out of it if I\u2019m lucky. "
+      get maybe 5 uses out of it if I\u2019m lucky. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
+    displayImage: {fileID: -1506242034118010436, guid: 85a157fb5005dde4fa5ff3458ae361d5, type: 3}
   - characterName: Dr. Shelley
     dialogue: "The rescue team must\u2019ve found me. I wonder if there\u2019s anything
       I can do to get to the surface faster. "
     audioClip: {fileID: 0}
-    displayImage: {fileID: 1777218850743635048, guid: 762ef3875e2623941b472d162e22e9b6, type: 3}
+    displayImage: {fileID: -4867115397657285082, guid: 1361acf2cd2452d4088b28d9b6136b3c, type: 3}
   endings:
   - {fileID: 2244456980498417849, guid: f257d2b7d0de6724f804a2732b4d533c, type: 3}
   - {fileID: 1689743303923839224, guid: a93edb72f0a9d8241a638af25fb4809b, type: 3}

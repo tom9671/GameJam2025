@@ -117,7 +117,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Canvas_Inventory
   items:
   - item: 3
-  - item: 4
   - item: 5
   widgetGrid: {fileID: 2708324558726009329}
 --- !u!1 &3138989327746569393

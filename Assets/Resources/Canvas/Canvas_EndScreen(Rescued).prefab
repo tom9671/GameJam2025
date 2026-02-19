@@ -60,6 +60,38 @@ PrefabInstance:
       value: 'And I wonder if I led it right where it wanted to be. '
       objectReference: {fileID: 0}
     - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[0].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[1].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[2].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[3].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[4].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[5].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[6].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
+      propertyPath: dialogue.Array.data[7].displayImage
+      value: 
+      objectReference: {fileID: -7269915579583931303, guid: 19d7a8f3f47e7c54d91ddfca9b895b7b, type: 3}
+    - target: {fileID: 2793242983465106621, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: dialogue.Array.data[0].characterName
       value: Dr. Shelley
       objectReference: {fileID: 0}
@@ -181,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959875379785200632, guid: 806c66cbe3b74fc498d6ef19e235d085, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4289769648
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
